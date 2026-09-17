@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #fce7f3
+        );
+
+    min-height: 100vh;
+
+    color: #333;
+}
+
+
+.container {
+
+    width: 850px;
+
+    max-width: 95%;
+
+    margin: auto;
+}
+
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+.header h1 {
+
+    color: #4f46e5;
+
+    margin-bottom: 5px;
+}
+
+
+.header p {
+
+    color: #666;
+}
+
+
+form,
+.result-page {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.details {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+}
+
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+input:focus,
+select:focus {
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 5px
+        rgba(99, 102, 241, 0.2);
+}
+
+
+.type-box {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f5f3ff;
+
+    border-radius: 10px;
+}
+
+
+.type-box h3 {
+
+    margin-top: 0;
+
+    color: #6d28d9;
+}
+
+
+.radio {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-right: 25px;
+
+    font-weight: normal;
+}
+
+
+.radio input {
+
+    width: auto;
+
+    margin-right: 7px;
+}
+
+
+h2 {
+
+    color: #4f46e5;
+
+    margin-top: 25px;
+}
+
+
+.subject {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr auto;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background: #f8fafc;
+
+    border-left:
+        5px solid #6366f1;
+
+    border-radius: 8px;
+}
+
+
+.buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+button {
+
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+.add-btn {
+
+    background: #0891b2;
+}
+
+
+.add-btn:hover {
+
+    background: #0e7490;
+}
+
+
+.calculate-btn {
+
+    background: #6366f1;
+}
+
+
+.calculate-btn:hover {
+
+    background: #4f46e5;
+}
+
+
+.remove-btn {
+
+    background: #ef4444;
+}
+
+
+.remove-btn:hover {
+
+    background: #dc2626;
+}
+
+
+.result-page {
+
+    text-align: center;
+}
+
+
+.result-page h1 {
+
+    color: #4f46e5;
+}
+
+
+.student-name {
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #7c3aed;
+
+    margin: 20px;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+
+th {
+
+    background: #6366f1;
+
+    color: white;
+
+    padding: 12px;
+}
+
+
+td {
+
+    padding: 12px;
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+    text-align: center;
+}
+
+
+tr:nth-child(even) {
+
+    background: #f5f3ff;
+}
+
+
+.sgpa {
+
+    color: #059669;
+
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+
+.overall-box {
+
+    margin: 20px auto;
+
+    padding: 15px;
+
+    width: 250px;
+
+    background: #ecfdf5;
+
+    border:
+        2px solid #10b981;
+
+    border-radius: 12px;
+}
+
+
+.overall-box p {
+
+    margin: 0;
+
+    color: #047857;
+
+    font-weight: bold;
+}
+
+
+.cgpa {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #059669;
+
+    margin-top: 5px;
+}
+
+
+.result-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.result-buttons a {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    min-width: 160px;
+}
+
+
+.next-button {
+
+    background: #6366f1;
+}
+
+
+.next-button:hover {
+
+    background: #4f46e5;
+}
+
+
+.back-button {
+
+    background: #6b7280;
+}
+
+
+.back-button:hover {
+
+    background: #4b5563;
+}
+
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+
+    .details {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .subject {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .buttons {
+
+        flex-direction: column;
+    }
+
+
+    .buttons button {
+
+        width: 100%;
+    }
+
+
+    .result-buttons {
+
+        flex-direction: column;
+    }
+
+
+    .result-buttons a {
+
+        width: 100%;
+    }
+
+
+    .cgpa {
+
+        font-size: 35px;
+    }
+
+}
